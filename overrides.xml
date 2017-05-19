@@ -1,0 +1,10 @@
+<overrides xmlns="http://www.ceylon-lang.org/xsd/overrides">
+    <!--module groupId="com.vaadin"
+            artifactId="vaadin-server">
+        <remove groupId="javax.servlet"
+                artifactId="javax.servlet-api"/>
+        <add module="javax.javaeeapi"
+             version="7.0"
+             shared="true"/>
+    </module-->
+</overrides>
