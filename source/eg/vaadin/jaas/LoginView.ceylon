@@ -17,26 +17,27 @@ import com.vaadin.ui {
     }
 }
 
-import java.util.logging {
-    Logger
-}
+//import java.util.logging {
+//    Logger
+//}
 
 import javax.servlet {
     ServletException
 }
 
 cdiView ("login")
-shared class LoginView extends LoginForm satisfies View {
+shared class LoginView
+        extends LoginForm
+        satisfies View {
 
     shared static String viewName = "login";
-    static value logger = Logger.getLogger(`class LoginView`.name);
+//    static value logger = Logger.getLogger(`class LoginView`.name);
 
     shared new () extends LoginForm() {}
 
-    shared actual void enter(ViewChangeEvent viewChangeEvent) {
-        value parameters = viewChangeEvent.parameters;
-        addLoginListener((loginEvent) => onLogin(loginEvent, parameters));
-    }
+    enter(ViewChangeEvent viewChangeEvent)
+            => addLoginListener((loginEvent)
+                => onLogin(loginEvent, viewChangeEvent.parameters));
 
     void onLogin(LoginEvent loginEvent, String? parameters) {
         value username = loginEvent.getLoginParameter("username");
@@ -49,7 +50,7 @@ shared class LoginView extends LoginForm satisfies View {
         }
         catch (ServletException e) {
             Notification.show("Login failed", Type.errorMessage);
-            logger.warning(e.string);
+//            logger.warning(e.string);
         }
     }
 

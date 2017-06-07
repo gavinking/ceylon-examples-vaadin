@@ -21,7 +21,7 @@ import javax.inject {
     inject
 }
 
-cdiui ("jaas")
+cdiui ("")
 theme ("jaasexampletheme")
 shared inject class JaasExampleUI(viewProvider) extends UI() {
 

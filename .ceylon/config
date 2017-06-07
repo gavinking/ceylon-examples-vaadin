@@ -8,5 +8,4 @@ offline=false
 flatclasspath=false
 autoexportmavendependencies=true
 fullyexportmavendependencies=true
-overrides=overrides.xml
 encoding=UTF-8
