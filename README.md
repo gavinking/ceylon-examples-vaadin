@@ -1,4 +1,4 @@
-# ceylon-examples-vaadin
+# Vaadin JAAS example in Ceylon
 
 This simple example demonstrates how to write a Java EE web
 application using [Vaadin][] and JAAS in the Ceylon 
