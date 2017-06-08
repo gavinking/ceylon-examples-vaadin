@@ -40,7 +40,7 @@ by running
 
     $JBOSS_HOME/bin/add-user.sh
 
-Now, copy the `.war` archive to your deployments directly
+Now, copy the `.war` archive to your deployments directory
 
     cp eg.vaadin.jaas-1.0.0.war $JBOSS_HOME/standalone/deployments/
 
