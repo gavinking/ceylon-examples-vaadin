@@ -1,4 +1,6 @@
 /.idea/libraries
+.idea/workspace.xml
 /.exploded/
 /modules/
 eg.vaadin.jaas-*.*
+.DS_Store
