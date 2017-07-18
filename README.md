@@ -29,7 +29,7 @@ To compile the example, type
 
 To assemble the example as a `.war` archive, type
 
-    ceylon war -Rresource eg.vaadin.jaas/1.0.0
+    ceylon war -Rresource eg.vaadin.jaas
 
 This will create the file `eg.vaadin.jaas-1.0.0.war`.
 
